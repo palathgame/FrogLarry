@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: TranslationTable_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: e79f36f2c1cb1ba49ad4c3a5d3f714eb, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 146766139392
+    m_Localized: Nouveau jeu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1162412658688
+    m_Localized: Quitter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1202476650496
+    m_Localized: Retour
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2584982163456
+    m_Localized: "S\xE9lectionnez le niveau"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2684273922048
+    m_Localized: Niveau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1260865556480
+    m_Localized: Avancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1298576543744
+    m_Localized: Annuler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1333812891648
+    m_Localized: "R\xE9p\xE9ter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1388640833536
+    m_Localized: "\xC0 gauche "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1423508082688
+    m_Localized: "\xC0 Droite"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1115201572864
+    m_Localized: Jouer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1467565051904
+    m_Localized: Manger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1571751563264
+    m_Localized: "D\xE9placer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1633357500416
+    m_Localized: Sauter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1659265716224
+    m_Localized: Sons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1709597364224
+    m_Localized: Musique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1759123705856
+    m_Localized: Langue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2070890516480
+    m_Localized: "Param\xE8tres"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3702901738991616
+    m_Localized: "Larry habite dans l'\xE9tang. Tu dois l'amener ici."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3707133229690880
+    m_Localized: "Le crapaud Larry s'est perdu dans la for\xEAt, aidez-le \xE0 trouver
+      le chemin de la maison."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3708267860226048
+    m_Localized: "Larry peut manger la mouche, mais s\xB4il s'approche trop, la mouche
+      s'envolera!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3707996111269888
+    m_Localized: Instructions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4253799829630976
+    m_Localized: Instructions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4423355699662848
+    m_Localized: Larry ne peut ni traverser les plantes ni les sauter.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4425522963648512
+    m_Localized: Une pierre bloque le chemin, Larry ne peut que sauter par-dessus.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4453472656265216
+    m_Localized: "D\xE9place Larry d'une case avant."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4453884713078784
+    m_Localized: Larry saute de deux cases, il peut aussi sauter par-dessus une pierre.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4454241006620672
+    m_Localized: Tourne Larry vers la gauche.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4454596520022016
+    m_Localized: Tourne Larry vers la droite.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4455004286062592
+    m_Localized: Larry tire sa langue vers la case suivante, s'il y a une mouche,
+      il la mangera.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4455477919453184
+    m_Localized: Ouvre le menu, mais fais attention, cela bloquera le chemin de Larry!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4456020834357248
+    m_Localized: Interrompt le chemin de Larry.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4456565007552512
+    m_Localized: "Acc\xE9l\xE8re le d\xE9roulement du chemin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4457388240375808
+    m_Localized: "Cr\xE9ez un bloc personnalis\xE9 auquel vous pouvez d\xE9finir
+      le nombre de r\xE9p\xE9titions. Vous pouvez imbriquer votre bloc jusqu'\xE0
+      3 fois."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4463259775242240
+    m_Localized: "D\xE9marre l'ex\xE9cution de la commande."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4464099063861248
+    m_Localized: "Emplacements pour contr\xF4ler Larry."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4465377651298304
+    m_Localized: "Emplacements pour cr\xE9er votre propre bloc."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5056136318390272
+    m_Localized: "Ce sont les \xE9l\xE9ments que vous utilisez pour contr\xF4ler
+      le jeu. Vous devez faire glisser ces \xE9l\xE9ments dans le panneau inf\xE9rieur."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5094226667868160
+    m_Localized: "\xC7a c'est le panneau pour ex\xE9cuter des commandes et cr\xE9er
+      des blocs personnalis\xE9s. La premi\xE8re ligne est r\xE9serv\xE9e aux commandes,
+      la deuxi\xE8me ligne est d\xE9di\xE9e \xE0 la cr\xE9ation de blocs."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6971001094115328
+    m_Localized: 'Larry Grenouille: Retour Maison'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,188 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: TranslationTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: TranslationTable
+  m_TableCollectionNameGuidString: e79f36f2c1cb1ba49ad4c3a5d3f714eb
+  m_Entries:
+  - m_Id: 146766139392
+    m_Key: newGame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1115201572864
+    m_Key: play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1162412658688
+    m_Key: exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1202476650496
+    m_Key: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1260865556480
+    m_Key: forward
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1298576543744
+    m_Key: cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1333812891648
+    m_Key: repeat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1388640833536
+    m_Key: left
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1423508082688
+    m_Key: right
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1467565051904
+    m_Key: eat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1571751563264
+    m_Key: move
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1633357500416
+    m_Key: jump
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1659265716224
+    m_Key: sounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1709597364224
+    m_Key: music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1759123705856
+    m_Key: language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2070890516480
+    m_Key: setting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2584982163456
+    m_Key: selectLevel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2684273922048
+    m_Key: level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3702901738991616
+    m_Key: PondDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3707133229690880
+    m_Key: FrogDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3707996111269888
+    m_Key: Instruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3708267860226048
+    m_Key: FlyDesccription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4253799829630976
+    m_Key: GameInstructions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4423355699662848
+    m_Key: TreeDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4425522963648512
+    m_Key: "StoneDescription\t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4453472656265216
+    m_Key: MoveInstruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4453884713078784
+    m_Key: JumpInstruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4454241006620672
+    m_Key: TurnLeftInstructions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4454596520022016
+    m_Key: TurnRightnstructions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4455004286062592
+    m_Key: EatInstructions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4455477919453184
+    m_Key: MenuButtonInstructions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4456020834357248
+    m_Key: CancelInstructions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4456565007552512
+    m_Key: FowardInstruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4457388240375808
+    m_Key: RepeaterInstruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4463259775242240
+    m_Key: PlayInstruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4464099063861248
+    m_Key: SlotControllInstruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4465377651298304
+    m_Key: SlotRepeaterInstruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5056136318390272
+    m_Key: ControllPanelInstruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5094226667868160
+    m_Key: RunPanelInstructions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6971001094115328
+    m_Key: "NameGame\t"
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4460910545687543858
+  references:
+    version: 2
+    RefIds:
+    - rid: 4460910545687543858
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1695577115543

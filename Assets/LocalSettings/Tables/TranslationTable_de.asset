@@ -1,0 +1,192 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: TranslationTable_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: e79f36f2c1cb1ba49ad4c3a5d3f714eb, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 146766139392
+    m_Localized: Neues Spiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1162412658688
+    m_Localized: Ende
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1202476650496
+    m_Localized: "Zur\xFCck"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2584982163456
+    m_Localized: "Level ausw\xE4hlen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2684273922048
+    m_Localized: Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1260865556480
+    m_Localized: "Vorw\xE4rts"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1298576543744
+    m_Localized: Abbrechen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1333812891648
+    m_Localized: Wiederholen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1388640833536
+    m_Localized: Links
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1423508082688
+    m_Localized: Rechts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1115201572864
+    m_Localized: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1467565051904
+    m_Localized: Essen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1571751563264
+    m_Localized: Bewegung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1633357500416
+    m_Localized: Springen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1659265716224
+    m_Localized: "Ger\xE4usche"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1709597364224
+    m_Localized: Musik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1759123705856
+    m_Localized: Sprache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2070890516480
+    m_Localized: Einstellung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3702901738991616
+    m_Localized: Larry wohnt im Teich. Du musst ihn hierher bringen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3707133229690880
+    m_Localized: "Frosch Larry hat sich im Wald verirrt. Helfen Sie Larry, seinen
+      Weg nach Hause zu finden.\t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3708267860226048
+    m_Localized: Larry kann die Fliege fressen, aber wenn er zu nah kommt, wird die
+      Fliege wegfliegen!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3707996111269888
+    m_Localized: Anweisungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4253799829630976
+    m_Localized: Anweisungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4423355699662848
+    m_Localized: "Larry kann weder durch die Pflanzen gehen, dennoch \xFCber sie
+      springen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4425522963648512
+    m_Localized: "Ein Stein versperrt den Weg, Larry kann nur dar\xFCber springen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4453472656265216
+    m_Localized: Bewegt Larry um ein Feld weiter.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4453884713078784
+    m_Localized: "Larry springt um zwei Felder, er kann auch \xFCber einen Stein
+      springen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4454241006620672
+    m_Localized: Larry dreht sich nach links.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4454596520022016
+    m_Localized: Larry dreht sich nach rechts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4455004286062592
+    m_Localized: "Larry schie\xDFt seine Zunge in Richtung des n\xE4chsten Feldes,
+      falls dort eine Fliege ist, wird er sie fressen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4455477919453184
+    m_Localized: "Es \xF6ffnet sich ein Men\xFC, aber seien Sie vorsichtig, es k\xF6nnte
+      Larry aufhalten!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4456020834357248
+    m_Localized: Unterbricht Larrys Weg.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4456565007552512
+    m_Localized: Beschleunigt den Verlauf des Weges.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4457388240375808
+    m_Localized: Erstelle einen eigenen Block, dem du die Anzahl der Wiederholungen
+      einstellen kannst. Deinen Block kannst du maximal 3 Mal verschachteln.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4463259775242240
+    m_Localized: "Startet die Ausf\xFChrung des Befehls."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4464099063861248
+    m_Localized: "Steckpl\xE4tze zur Steuerung von Larry."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4465377651298304
+    m_Localized: "Steckpl\xE4tze zum Erstellen Ihres eigenen Blocks."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5056136318390272
+    m_Localized: "In diesem Bedienfeld befinden sich die Elemente, mit denen Sie
+      das Spiel steuern. Sie m\xFCssen diese Elemente in das untere Bedienfeld ziehen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5094226667868160
+    m_Localized: "Bedienfeld zum Starten von Befehlen(erste Zeile) und zum Erstellen
+      eigener Bl\xF6cke(zweite Zeile)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6971001094115328
+    m_Localized: 'Frosch Larry: Heimkehr'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

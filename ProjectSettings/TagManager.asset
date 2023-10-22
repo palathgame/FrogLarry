@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Move
+  - SlotPrefab
+  - Eat
+  - Jump
+  - Right
+  - Left
+  - SlotCreator
+  - Frog
+  - Fly
+  - Tongue
+  - Tree
+  - Stone
+  - Repeater
+  - SlotCreator2
+  - Pond
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Background
+  - GameElements
+  - 
+  - test
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: test
+    uniqueID: 1977549381
+    locked: 0
