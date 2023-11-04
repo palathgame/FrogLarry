@@ -27,8 +27,6 @@ public class ResultScoreScript : MonoBehaviour
     }
     public void setWin() {
         
-        Debug.Log(thisLevel);
-
         var gridManagerScript = GameObject.Find("GridManager").GetComponent<GridManagerScript>();
         if (gridManagerScript.EvaluatedMove(moves)) { 
             countStar++;
@@ -52,7 +50,7 @@ public class ResultScoreScript : MonoBehaviour
             }
         }
 
-        next.gameObject.SetActive(true);
+        
         var level = gridManagerScript.getLevel();
         saveScore(level, countStar);
 
@@ -61,7 +59,13 @@ public class ResultScoreScript : MonoBehaviour
         {
             number++; 
             string nextLevel = level.Substring(0, 5) + number.ToString(); // Vytvoøení nového øetìzce.
-            PlayerPrefs.SetString("LastLevel", nextLevel);
+            if (FileController.existLevel(nextLevel))
+            {
+                PlayerPrefs.SetString("LastLevel", nextLevel);
+                next.gameObject.SetActive(true);
+            }
+       
+            
         }
     }
 
@@ -84,7 +88,6 @@ public class ResultScoreScript : MonoBehaviour
     }
     public void Reset()
     {
-        Debug.Log(thisLevel);
         PlayerPrefs.SetString("LastLevel", thisLevel);
         SceneManager.LoadScene("Game");
         
@@ -92,14 +95,13 @@ public class ResultScoreScript : MonoBehaviour
 
     private void saveScore(string levelName, int score)
     {
-        string dataPath = Path.Combine(Application.persistentDataPath, "levelData.json");
+        string dataPath = FileController.pathJsonDataLevel();
 
         if (File.Exists(dataPath))
         {
             string jsonData = File.ReadAllText(dataPath);
             List<LevelScore> levelDataList = JsonUtility.FromJson<LevelDataWrapper>(jsonData).levels;
-          
-            bool levelExists = false;
+
             bool setOpen = false;
 
             foreach (LevelScore level in levelDataList)
@@ -111,7 +113,6 @@ public class ResultScoreScript : MonoBehaviour
                     }
                 if (level.GetLevel() == levelName)
                 {
-                    levelExists = true;
                     setOpen = true;
                     if (level.GetScore() < score) {
                         level.SetScore(score);
@@ -119,11 +120,7 @@ public class ResultScoreScript : MonoBehaviour
                 }
             }
 
-            if (!levelExists)
-            {
-                levelDataList.Add(new LevelScore(levelName, score, true));
-            }
-            File.WriteAllText(dataPath, JsonUtility.ToJson(new LevelDataWrapper(levelDataList)));
+            FileController.WriteJsonData(JsonUtility.ToJson(new LevelDataWrapper(levelDataList)));
 
         }
 
@@ -157,5 +154,4 @@ public class ResultScoreScript : MonoBehaviour
         settingsObject.GetComponent<SettingsMenu>().SetVolumeMusic(music);
 
     }
-
 }

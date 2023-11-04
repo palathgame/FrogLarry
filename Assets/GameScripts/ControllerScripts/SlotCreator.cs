@@ -1,11 +1,12 @@
-using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SlotCreator : MonoBehaviour
 {
     public GameObject slotPrefab; // Prefab slotu
     public Transform panelTransform; // Transform panelu, kam se budou sloty vytváøet
     private float xOffset = 0; // Odstup mezi sloty
+    [SerializeField] Color color;
 
 
     private void Start()
@@ -24,6 +25,8 @@ public class SlotCreator : MonoBehaviour
             var slotTransform = slotPrefab.GetComponent<RectTransform>();
             slot.transform.localPosition = new Vector3(xOffset, -95, 0);
             xOffset += slotTransform.rect.width + 2.5f;
+            color.a = 1.0f;
+            slot.GetComponent<Image>().color=color;
 
             // Pøevedení svìtové pozice slotu na viewport
             Vector3 slotViewportPosition = Camera.main.WorldToViewportPoint(slot.transform.position);
@@ -35,4 +38,5 @@ public class SlotCreator : MonoBehaviour
             }
         }
     }
+
 }

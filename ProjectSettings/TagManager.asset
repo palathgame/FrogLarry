@@ -19,6 +19,7 @@ TagManager:
   - Repeater
   - SlotCreator2
   - Pond
+  - ResultScore
   layers:
   - Default
   - TransparentFX

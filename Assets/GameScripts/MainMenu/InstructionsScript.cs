@@ -41,8 +41,6 @@ public class InstructionsScript : MonoBehaviour
     {
         for (int i = 0; i < instructions.Length; i++)
         {
-            Debug.Log(instruction);
-            Debug.Log(i);
             if (i == instruction) {
                 instructions[i].SetActive(true);
             }

@@ -15,9 +15,10 @@ public class DragFromSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 
     public virtual void OnBeginDrag(PointerEventData eventData)
     {
-        mainCamera.GetComponent<CameraController>().SetChangeview(false);
+        
         if (transform.childCount > 0)
         {
+            mainCamera.GetComponent<CameraController>().SetChangeview(false);
             currentButtonCopy = transform.GetChild(0).gameObject;
             currentButtonCopy.transform.SetParent(transform.parent.parent, false);
         }

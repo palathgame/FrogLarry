@@ -1,6 +1,7 @@
 
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
 
@@ -11,11 +12,12 @@ public class GridManagerScript : MonoBehaviour
     [SerializeField] private TileBase tilePrefab;      // Pøeddefinovaná dlaždice pro použití na herním poli
     //[SerializeField] private Vector3 startPosition = new Vector3(0, 0, 0); // Poèáteèní pozice mapy
     [SerializeField] private Camera cam;
+    [SerializeField] private GameObject Controll;
     private int maxMove = 0;
     private int catchMax = 0;
     private int catchFly = 0;
     private string level;
-
+    
     private void Start()
     {
         level = PlayerPrefs.GetString("LastLevel");
@@ -25,6 +27,8 @@ public class GridManagerScript : MonoBehaviour
             PlayerPrefs.SetString("LastLevel", "level1");
             PlayerPrefs.Save();
         }
+        // level = "level18";
+        //PlayerPrefs.SetString("LastLevel", "level18");
         GenerateGrid();
     }
 
@@ -202,4 +206,23 @@ public class GridManagerScript : MonoBehaviour
     
         return level;
     }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            GameObject myObject = GameObject.FindGameObjectWithTag("ResultScore");
+            if (myObject == null)
+            {
+                Controll.GetComponent<PlayScript>().setOpenResult();
+            }
+            else {
+                SceneManager.LoadScene("Menu");
+            }
+           
+        }
+
+    }
+
+
 }

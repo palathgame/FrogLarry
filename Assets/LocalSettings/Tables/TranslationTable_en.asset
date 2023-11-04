@@ -183,6 +183,14 @@ MonoBehaviour:
     m_Localized: 'Frog Larry: Homecoming'
     m_Metadata:
       m_Items: []
+  - m_Id: 12412603916718080
+    m_Localized: Clicking on the right edge hides the panel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12419523331330048
+    m_Localized: Clicking on the top edge hides the panel.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

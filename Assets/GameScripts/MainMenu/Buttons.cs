@@ -19,6 +19,18 @@ public class Buttons : MonoBehaviour
         ChangeLocale();
 
     }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ExitGame();
+        }
+
+    }
+
+
+
     public void StartGame()
     {
 

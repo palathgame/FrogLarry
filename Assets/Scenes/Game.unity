@@ -1762,7 +1762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9372549, g: 0.59607846, b: 0.8784314, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2326,7 +2326,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00024414062, y: 0}
+  m_AnchoredPosition: {x: 0.00048828125, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1040634008
@@ -2417,6 +2417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotPrefab: {fileID: 2886140567277300028, guid: acb18dfa53d12de47bf0b198471e74e9, type: 3}
   panelTransform: {fileID: 1068100888}
+  color: {r: 0.9372549, g: 0.59607846, b: 0.8784314, a: 0}
 --- !u!1 &1321571637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2774,6 +2775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotPrefab: {fileID: 2886140567277300028, guid: acb18dfa53d12de47bf0b198471e74e9, type: 3}
   panelTransform: {fileID: 1385233802}
+  color: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1 &1449365436
 GameObject:
   m_ObjectHideFlags: 0
@@ -3379,8 +3381,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilemap: {fileID: 78691038}
   tilePrefab: {fileID: 11400000, guid: 1bbb7c6feaafceb42b84d9c3f3a0fbba, type: 2}
-  startPosition: {x: 0, y: 0, z: 0}
   cam: {fileID: 519420031}
+  Controll: {fileID: 251803369}
 --- !u!1 &1714144332
 GameObject:
   m_ObjectHideFlags: 0
@@ -3666,7 +3668,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10, y: 2.63, z: 0}
-  m_LocalScale: {x: 30, y: 20, z: 1}
+  m_LocalScale: {x: 60, y: 60, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4341,7 +4343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -18.090088, y: 61.97}
+  m_AnchoredPosition: {x: -18.090332, y: 61.97}
   m_SizeDelta: {x: 235.39, y: 165.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2074093688

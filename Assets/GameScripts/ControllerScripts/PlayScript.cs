@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayScript : MonoBehaviour
 {
@@ -16,19 +17,26 @@ public class PlayScript : MonoBehaviour
     private Coroutine ReadCommandsCoroutine;
     private bool win = false;
     private bool pause = false;
-    
+    private bool coroutineRun = false;
+    private GameObject[] slotCreators;
+
+  
     public void ReadCommands()
     {
+
+        if (slotCreators == null) { slotCreators = GameObject.FindGameObjectsWithTag("SlotCreator"); }
         runPanel.GetComponent<RunPanelControll>().DisablePlay();
         frog = GameObject.FindGameObjectWithTag("Frog");
         frogAnimator = frog.GetComponent<Animator>();
         frogSounds = frog.GetComponents<AudioSource>();
-        GameObject[] slotCreators = GameObject.FindGameObjectsWithTag("SlotCreator");
+        
         ReadCommandsCoroutine = StartCoroutine(ProcessCommands(slotCreators));
+        
     }
 
     private IEnumerator ProcessCommands(GameObject[] slotCreators)
     {
+        coroutineRun = true;
         foreach (GameObject slotCreator in slotCreators)
         {
             Transform slotTransform = slotCreator.transform;
@@ -38,7 +46,7 @@ public class PlayScript : MonoBehaviour
                 Transform childTransform = slotTransform.GetChild(i);
                 if (childTransform.childCount > 0)
                 {
-                    if (pause)
+                    if (pause )
                     {
                         pause = false;
                         StopCoroutine(ReadCommandsCoroutine);
@@ -89,6 +97,7 @@ public class PlayScript : MonoBehaviour
 
     private IEnumerator ProcessCommands(List<string> commands, int repeat, List<InternalRepeaterScript> internalRepeaterScripts)
     {
+        coroutineRun = true;
         bool endMove = false;
         for (int i = 0; i < repeat; i++)
         {
@@ -320,14 +329,39 @@ public class PlayScript : MonoBehaviour
 
     public void StopCode()
     {
-        if (ReadCommandsCoroutine != null)
+       
+        if (coroutineRun && ReadCommandsCoroutine != null)
         {
             pause = true;
+            coroutineRun = false;
         }
+        else if (!coroutineRun)
+        {
+            slotCreators = GameObject.FindGameObjectsWithTag("SlotCreator");
+
+
+            foreach (GameObject slotCreator in slotCreators)
+            {
+
+                Transform slotTransform = slotCreator.transform;
+                for (int i = 0; i < slotTransform.childCount; i++)
+                {
+                    Transform childTransform = slotTransform.GetChild(i);
+                    if (childTransform.childCount > 0)
+                    {
+                        Destroy(childTransform.GetChild(0).gameObject);
+
+                    }
+
+                }
+            }
+        }
+
         runPanel.GetComponent<RunPanelControll>().EnablePlay();
     }
 
-    private void setResult()
+
+private void setResult()
     {
         StopCode();
         menu = Instantiate(resultScore);
@@ -338,8 +372,13 @@ public class PlayScript : MonoBehaviour
 
     public void setOpenResult()
     {
-        setResult();
-        menu.GetComponent<ResultScoreScript>().SetPause();
+        GameObject myObject = GameObject.FindGameObjectWithTag("ResultScore");
+        if (myObject == null)
+        {
+            setResult();
+            menu.GetComponent<ResultScoreScript>().SetPause();
+        }
+        
 
     }
 

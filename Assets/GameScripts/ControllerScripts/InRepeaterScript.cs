@@ -5,8 +5,7 @@ using UnityEngine.UI;
 public class InRepeaterScript : MonoBehaviour
 {
     [SerializeField] Image[] images;
-    public void setImages(List<string> commands) { 
-        
+    public void setImages(List<string> commands) {
 
        for (int i = 0; i < images.Length; i++) {
 

@@ -50,8 +50,8 @@ public class FlyScript : MonoBehaviour
         audioSources[1].Play();
         isDead = true;
         float animationDuration = flyAnimator.GetCurrentAnimatorStateInfo(0).length;
-        yield return new WaitForSeconds(animationDuration); // Poèkáme na dokonèení animace
-        StartCoroutine(FlytWithAnimation(1, "Move"));          
+        yield return new WaitForSeconds(animationDuration*0.45f); // Poèkáme na dokonèení animace
+       // StartCoroutine(FlytWithAnimation(1, "Move"));          
         Destroy(gameObject); // Znièení mouchy
             
         
