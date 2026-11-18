@@ -36,12 +36,11 @@ public class GridManagerScript : MonoBehaviour
     {
         string levelData = LoadLevelData(level);
 
-
         // Rozdìlení textového souboru na øádky
 
         string[] lines = levelData.Split('\n');
   
-        // Rozdìlení každého øádku na slova (oddìlená mezerami)
+        // Rozdìlení každého øádku na slova (oddìlená tabem)
         List<string[]> wordsInLines = new List<string[]>();
 
         foreach (string line in lines)
@@ -53,16 +52,13 @@ public class GridManagerScript : MonoBehaviour
         int y = 0;
         int x = 0;
         wordsInLines.Reverse();
-        // Vypsání obsahu souboru na konzoli
+
         foreach (string[] words in wordsInLines)
         {
-
             foreach (string word in words)
-            {
-               
+            {      
                 Vector3Int tilePosition = new Vector3Int(x, y, 0);     // Vytvoøení pozice dlaždice pomocí souøadnic
                 tilemap.SetTile(tilePosition, tilePrefab);             // Nastavení dlaždice na danou pozici v Tilemap
-
                 //Debug.Log(word);
                 MadeGenerateObject(word,tilePosition);
 
@@ -139,10 +135,6 @@ public class GridManagerScript : MonoBehaviour
         }
 
 
-
-
-
-
         if (nameGenerateObject != "None")
         {
             GameObject prefab = Resources.Load<GameObject>("Prefabs/" + nameGenerateObject);
@@ -161,9 +153,7 @@ public class GridManagerScript : MonoBehaviour
                 {
                     rotationAngle = 180.0f;
 
-
                 }
-
 
                 // Vytvoøte Quaternion pro rotaci o daný úhel kolem osy z
                 Quaternion rotation = Quaternion.Euler(0, 0, rotationAngle);

@@ -30,19 +30,29 @@ public class InicializationSelectLevelMenuScript : MonoBehaviour
         if (startIndex < 0)
         {
 
-            startIndex = countFiles - 10;
+            // Last page; it may be partly empty when the level count is not a multiple of 10.
+            startIndex = ((countFiles - 1) / 10) * 10;
         }
 
         int levelButton = 0;
 
         for (int i = startIndex; i < startIndex + 10; i++)
         {
-
-            var level = levelDataList[i]; 
             levelButton++;
-
-
             Transform levelButtonObject = transform.Find("LevelsGrid/Level" + levelButton);
+
+            bool exists = i < countFiles && i < levelDataList.Count;
+            if (levelButtonObject != null)
+            {
+                levelButtonObject.gameObject.SetActive(exists);
+            }
+            if (!exists)
+            {
+                continue;
+            }
+
+            var level = levelDataList[i];
+
             if (levelButtonObject != null)
             {
 

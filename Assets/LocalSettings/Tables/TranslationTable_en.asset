@@ -191,6 +191,86 @@ MonoBehaviour:
     m_Localized: Clicking on the top edge hides the panel.
     m_Metadata:
       m_Items: []
+  - m_Id: 417134681389109248
+    m_Localized: Help Larry get to the pond! Drag the Move block into the first slot
+      below.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052288
+    m_Localized: Great! One Move = one tile. Larry needs two more.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052289
+    m_Localized: Ready? Press Play and watch Larry go!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052291
+    m_Localized: The path turns! Larry must turn at the corner. Put the Right block
+      in the 3rd slot.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052292
+    m_Localized: 'Now add Moves: 2 before the turn and 3 after it.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052293
+    m_Localized: A stone! Larry can hop over it with Jump. Put Jump in the 2nd slot,
+      right before the stone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052294
+    m_Localized: A fly! Larry can eat it when he's right in front of it. Put Eat
+      in the 3rd slot.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052295
+    m_Localized: This path is long! Put 3 Move blocks into the red row.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052296
+    m_Localized: Now press Repeat. The red row turns into a single block.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052297
+    m_Localized: Use + to set how many times it repeats. You need 4.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052298
+    m_Localized: Great! Drag the repeater up into the main row.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161728
+    m_Localized: Add one Move before the Jump and one after it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161729
+    m_Localized: 'Add Moves: 2 before Eat and 3 after it, all the way to the pond.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161730
+    m_Localized: Almost! Larry needs exactly 3 Moves. Open the menu and try again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161731
+    m_Localized: 'Larry must turn at the corner: 2 Moves, Right, 3 Moves. Open the
+      menu and try again.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161732
+    m_Localized: 'Jump right before the stone: Move, Jump, Move. Open the menu and
+      try again.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161733
+    m_Localized: Go to the fly with 2 Moves, Eat, then 3 Moves. Open the menu and
+      try again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161734
+    m_Localized: A repeater with 3 Moves set to 4 walks 12 tiles, right to the pond.
+      Open the menu and try again.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

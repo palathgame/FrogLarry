@@ -183,6 +183,78 @@ MonoBehaviour:
     m_Key: RunPanelHideShow
     m_Metadata:
       m_Items: []
+  - m_Id: 417134681389109248
+    m_Key: tut_l1_drag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052288
+    m_Key: tut_l1_more
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052289
+    m_Key: tut_play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052291
+    m_Key: tut_l2_turn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052292
+    m_Key: tut_l2_build
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052293
+    m_Key: tut_l3_jump
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052294
+    m_Key: tut_l4_eat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052295
+    m_Key: tut_l5_long
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052296
+    m_Key: tut_l5_make
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052297
+    m_Key: tut_l5_count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052298
+    m_Key: tut_l5_drag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161728
+    m_Key: tut_l3_build
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161729
+    m_Key: tut_l4_build
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161730
+    m_Key: tut_hint_l1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161731
+    m_Key: tut_hint_l2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161732
+    m_Key: tut_hint_l3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161733
+    m_Key: tut_hint_l4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161734
+    m_Key: tut_hint_l5
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

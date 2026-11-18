@@ -329,7 +329,6 @@ public class PlayScript : MonoBehaviour
 
     public void StopCode()
     {
-       
         if (coroutineRun && ReadCommandsCoroutine != null)
         {
             pause = true;
@@ -356,10 +355,8 @@ public class PlayScript : MonoBehaviour
                 }
             }
         }
-
         runPanel.GetComponent<RunPanelControll>().EnablePlay();
     }
-
 
 private void setResult()
     {

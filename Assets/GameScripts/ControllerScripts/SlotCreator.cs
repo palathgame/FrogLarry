@@ -16,8 +16,6 @@ public class SlotCreator : MonoBehaviour
 
     private void CreateSlots(int numSlots)
     {
-
-    
         for (int i = 0; i < numSlots; i++)
         {
 

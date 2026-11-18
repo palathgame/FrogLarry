@@ -194,6 +194,90 @@ MonoBehaviour:
     m_Localized: "En cliquant sur le bord sup\xE9rieur, le panneau se cache."
     m_Metadata:
       m_Items: []
+  - m_Id: 417134681389109248
+    m_Localized: "Aide Larry \xE0 rejoindre la mare ! Glisse le bloc D\xE9placer
+      dans la premi\xE8re case en bas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052288
+    m_Localized: "Bravo ! Un D\xE9placer = une case. Larry en a besoin de deux de
+      plus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052289
+    m_Localized: "Pr\xEAt ? Appuie sur Jouer et regarde Larry !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052291
+    m_Localized: "Le chemin tourne ! Larry doit tourner au virage. Mets le bloc \xC0
+      Droite dans la 3e case."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052292
+    m_Localized: "Ajoute maintenant des D\xE9placer : 2 avant le virage et 3 apr\xE8s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052293
+    m_Localized: Une pierre ! Larry peut la franchir avec Sauter. Mets Sauter dans
+      la 2e case, juste avant la pierre.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052294
+    m_Localized: Une mouche ! Larry peut la manger s'il est juste devant. Mets Manger
+      dans la 3e case.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052295
+    m_Localized: "Ce chemin est long ! Mets 3 blocs D\xE9placer dans la rang\xE9e
+      rouge."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052296
+    m_Localized: "Appuie sur R\xE9p\xE9ter. La rang\xE9e rouge devient un seul bloc."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052297
+    m_Localized: "Avec + choisis combien de fois il se r\xE9p\xE8te. Il en faut 4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052298
+    m_Localized: "Super ! Glisse le r\xE9p\xE9teur vers la rang\xE9e principale."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161728
+    m_Localized: "Ajoute un D\xE9placer avant Sauter et un apr\xE8s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161729
+    m_Localized: "Ajoute des D\xE9placer : 2 avant Manger et 3 apr\xE8s, jusqu'\xE0
+      la mare."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161730
+    m_Localized: "Presque ! Larry a besoin d'exactement 3 D\xE9placer. Ouvre le menu
+      et r\xE9essaie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161731
+    m_Localized: "Larry doit tourner au virage : 2 D\xE9placer, \xC0 Droite, 3 D\xE9placer.
+      Ouvre le menu et r\xE9essaie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161732
+    m_Localized: "Saute juste avant la pierre : D\xE9placer, Sauter, D\xE9placer.
+      Ouvre le menu et r\xE9essaie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161733
+    m_Localized: "Va vers la mouche avec 2 D\xE9placer, Manger, puis 3 D\xE9placer.
+      Ouvre le menu et r\xE9essaie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161734
+    m_Localized: "Un r\xE9p\xE9teur avec 3 D\xE9placer r\xE9gl\xE9 sur 4 fait 12
+      cases, jusqu'\xE0 la mare. Ouvre le menu et r\xE9essaie."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

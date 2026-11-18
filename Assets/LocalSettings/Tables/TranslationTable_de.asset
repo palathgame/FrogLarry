@@ -195,6 +195,88 @@ MonoBehaviour:
     m_Localized: Durch Klicken auf den oberen Rand wird das Panel ausgeblendet.
     m_Metadata:
       m_Items: []
+  - m_Id: 417134681389109248
+    m_Localized: Hilf Larry zum Teich! Zieh den Block Bewegung in das erste Feld
+      unten.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052288
+    m_Localized: Super! Eine Bewegung = ein Feld. Larry braucht noch zwei.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052289
+    m_Localized: "Fertig? Dr\xFCck Start und schau Larry zu!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052291
+    m_Localized: Der Weg biegt ab! Larry muss in der Kurve drehen. Leg den Block
+      Rechts ins 3. Feld.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052292
+    m_Localized: "F\xFCge jetzt Bewegungen hinzu: 2 vor der Drehung und 3 danach."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052293
+    m_Localized: "Ein Stein! Larry h\xFCpft mit Springen dar\xFCber. Leg Springen
+      ins 2. Feld, direkt vor den Stein."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052294
+    m_Localized: Eine Fliege! Larry frisst sie, wenn er direkt davor steht. Leg Essen
+      ins 3. Feld.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052295
+    m_Localized: "Dieser Weg ist lang! Leg 3 Bewegung-Bl\xF6cke in die rote Reihe."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052296
+    m_Localized: "Dr\xFCck jetzt Wiederholen. Aus der roten Reihe wird ein einziger
+      Block."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052297
+    m_Localized: Stell mit + ein, wie oft er sich wiederholt. Du brauchst 4.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052298
+    m_Localized: Super! Zieh den Wiederholer nach oben in die Hauptreihe.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161728
+    m_Localized: "F\xFCge eine Bewegung vor Springen und eine danach hinzu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161729
+    m_Localized: "F\xFCge Bewegungen hinzu: 2 vor Essen und 3 danach, bis zum Teich."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161730
+    m_Localized: "Fast! Larry braucht genau 3 Bewegungen. \xD6ffne das Men\xFC und
+      versuch es nochmal."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161731
+    m_Localized: "Larry muss in der Kurve drehen: 2 Bewegungen, Rechts, 3 Bewegungen.
+      \xD6ffne das Men\xFC und versuch es nochmal."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161732
+    m_Localized: "Spring direkt vor dem Stein: Bewegung, Springen, Bewegung. \xD6ffne
+      das Men\xFC und versuch es nochmal."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161733
+    m_Localized: "Geh mit 2 Bewegungen zur Fliege, Essen, dann 3 Bewegungen. \xD6ffne
+      das Men\xFC und versuch es nochmal."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161734
+    m_Localized: "Ein Wiederholer mit 3 Bewegungen auf 4 gestellt geht 12 Felder,
+      genau bis zum Teich. \xD6ffne das Men\xFC und versuch es nochmal."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

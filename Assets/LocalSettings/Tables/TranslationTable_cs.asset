@@ -196,6 +196,94 @@ MonoBehaviour:
     m_Localized: "Kliknut\xEDm na horn\xED okraj se panel skryje."
     m_Metadata:
       m_Items: []
+  - m_Id: 417134681389109248
+    m_Localized: "Pomoz Larrymu do rybn\xED\u010Dku! P\u0159et\xE1hni blok Pohyb
+      do prvn\xEDho pol\xED\u010Dka dole."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052288
+    m_Localized: "V\xFDborn\u011B! Jeden Pohyb = jedno pol\xED\u010Dko. Larry pot\u0159ebuje
+      je\u0161t\u011B dva."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052289
+    m_Localized: Hotovo? Stiskni Spustit a sleduj Larryho!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052291
+    m_Localized: "Cesta zat\xE1\u010D\xED! Larry se mus\xED oto\u010Dit v zat\xE1\u010Dce.
+      Dej blok Doprava na 3. m\xEDsto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052292
+    m_Localized: "Te\u010F dopl\u0148 Pohyby: 2 p\u0159ed oto\u010Den\xED a 3 za
+      n\u011Bj."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052293
+    m_Localized: "K\xE1men! Larry ho p\u0159esko\u010D\xED Skokem. Dej Skok na 2.
+      m\xEDsto, t\u011Bsn\u011B p\u0159ed k\xE1men."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052294
+    m_Localized: "Moucha! Larry ji sn\xED, kdy\u017E stoj\xED hned p\u0159ed n\xED.
+      Dej J\xEDst na 3. m\xEDsto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052295
+    m_Localized: "Tahle cesta je dlouh\xE1! Dej 3 bloky Pohyb do \u010Derven\xE9
+      \u0159ady."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052296
+    m_Localized: "Te\u010F stiskni Opakovat. Z \u010Derven\xE9 \u0159ady vznikne
+      jeden blok."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052297
+    m_Localized: "Tla\u010D\xEDtkem + nastav, kolikr\xE1t se m\xE1 opakovat. Pot\u0159ebuje\u0161
+      4\xD7."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417134681431052298
+    m_Localized: "Skv\u011Ble! P\u0159et\xE1hni opakova\u010D nahoru do hlavn\xED
+      \u0159ady."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161728
+    m_Localized: "Dopl\u0148 jeden Pohyb p\u0159ed Skok a jeden za n\u011Bj."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161729
+    m_Localized: "Dopl\u0148 Pohyby: 2 p\u0159ed J\xEDst a 3 za n\u011Bj a\u017E
+      do rybn\xED\u010Dku."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161730
+    m_Localized: "Skoro! Larry pot\u0159ebuje p\u0159esn\u011B 3\xD7 Pohyb. Otev\u0159i
+      menu a zkus to znovu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161731
+    m_Localized: "Larry se mus\xED oto\u010Dit a\u017E v zat\xE1\u010Dce: 2\xD7 Pohyb,
+      Doprava, 3\xD7 Pohyb. Otev\u0159i menu a zkus to znovu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161732
+    m_Localized: "Sk\xE1kej t\u011Bsn\u011B p\u0159ed kamenem: Pohyb, Skok, Pohyb.
+      Otev\u0159i menu a zkus to znovu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161733
+    m_Localized: "Jdi k mou\u0161e 2\xD7 Pohyb, dej J\xEDst a pak 3\xD7 Pohyb. Otev\u0159i
+      menu a zkus to znovu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417139962521161734
+    m_Localized: "Opakova\u010D se 3 Pohyby nastaven\xFD na 4\xD7 ujde 12 pol\xED\u010Dek,
+      p\u0159esn\u011B k rybn\xED\u010Dku. Otev\u0159i menu a zkus to znovu."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

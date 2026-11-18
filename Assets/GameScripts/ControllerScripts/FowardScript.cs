@@ -17,8 +17,6 @@ public class FowardScript : MonoBehaviour
     public void SetForward()
     {
 
-        Color currentColor = button.image.color;
-
         if (Time.timeScale == 1)
         {
             Time.timeScale = 2.0f;

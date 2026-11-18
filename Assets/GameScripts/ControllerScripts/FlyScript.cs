@@ -62,9 +62,10 @@ public class FlyScript : MonoBehaviour
         audioSources[0].volume = PlayerPrefs.GetFloat("GameSounds", 1.0f);
         audioSources[0].Play();
         flyRunning = true;
+        StartCoroutine(FlytWithAnimation(3, "Flying"));
         while (flyRunning && !isDead)
         {
-            StartCoroutine(FlytWithAnimation(3, "Flying"));
+          
             yield return new WaitForSeconds(0.1f); // Krátká pauza mezi jednotlivými lety
 
             // Získání pozice mouchy ve viewport souøadnicích
