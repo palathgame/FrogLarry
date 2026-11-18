@@ -22,6 +22,8 @@ public class EatScript : MonoBehaviour
             flyToAttach = collision.gameObject;
             flyToAttach.GetComponent<FlyScript>().Api("Die");
             gridManagerScript.addCatchFly();
+            var effects = GetComponentInParent<FrogEffectsScript>(); // "+1" over Larry
+            if (effects != null) effects.FlyEaten();
         }
     }
 }

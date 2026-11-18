@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: -9121298458899682493}
   - component: {fileID: -3813473020653765131}
   - component: {fileID: 8874652460725631662}
+  - component: {fileID: 790505906079301231}
   m_Layer: 7
   m_Name: Frog
   m_TagString: Frog
@@ -711,6 +712,22 @@ MonoBehaviour:
   blinks: 3
   arrowHeight: 1.1
   gap: 0.6
+--- !u!114 &790505906079301231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5263480661621623724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6adf90b3d44c3294bbdb3fae4febd0e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FrogEffectsScript
+  flyIcon: {fileID: 21300000, guid: 394dc4741fd849b47b127472511f251e, type: 3}
+  starSprite: {fileID: 21300000, guid: 742df71b227d95f4daeef2490c17a925, type: 3}
+  bumpClip: {fileID: 8300000, guid: 702ec5ee637eb444094cad16ada6c6ae, type: 3}
+  font: {fileID: 11400000, guid: e208eb4d54093164ea9af184f1bcbaa7, type: 2}
 --- !u!1 &5552182750514752441
 GameObject:
   m_ObjectHideFlags: 0

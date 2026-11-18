@@ -197,6 +197,7 @@ public class PlayScript : MonoBehaviour
 
             if (hit?.tag == "Tree" || hitBehind?.tag == "Stone" || hitBehind?.tag == "Tree")
             {
+                yield return BumpEffect(direction, hit?.tag == "Tree" ? hit : hitBehind);
                 yield break;
             }
 
@@ -260,11 +261,23 @@ public class PlayScript : MonoBehaviour
                 }
                 frog.transform.position = newPosition;
             }
+            else
+            {
+                // A bush or a stone is in the way: Larry bumps into it.
+                yield return BumpEffect(direction, hit);
+            }
 
         }
 
         yield break;
 
+    }
+
+    // Shake, thump and dizzy stars when Larry cannot go on (see FrogEffectsScript).
+    private IEnumerator BumpEffect(Vector3 direction, Collider2D obstacle)
+    {
+        var effects = frog.GetComponent<FrogEffectsScript>();
+        if (effects != null) yield return StartCoroutine(effects.Bump(direction, obstacle));
     }
 
     private IEnumerator RotateObjectWithAnimation(float angle, string trigger)

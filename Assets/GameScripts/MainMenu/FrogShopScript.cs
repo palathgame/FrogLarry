@@ -19,6 +19,51 @@ public class FrogShopScript : MonoBehaviour
     private TextMeshProUGUI walletText;
     private Sprite flyIcon;
 
+    private Transform shopButton;
+    private Vector3 shopButtonScale;
+    private GameObject badge;
+    private bool canBuy;
+    private float nextCheck;
+
+    private void Start()
+    {
+        var button = GameObject.Find("Menu/Canvas/Shop");
+        if (button == null) return;
+        shopButton = button.transform;
+        shopButtonScale = shopButton.localScale;
+        // Fly badge on the button's right end, shown while a new frog can be bought.
+        var icon = MakeImage(shopButton, "CanBuy", FrogSkins.LoadIcon("FlyIcon"), Color.white);
+        icon.preserveAspect = true;
+        icon.raycastTarget = false;
+        Place(icon.rectTransform, new Vector2(1, 0.5f), new Vector2(-55, 0), new Vector2(110, 110));
+        badge = icon.gameObject;
+    }
+
+    private void Update()
+    {
+        if (shopButton == null) return;
+        if (Time.unscaledTime >= nextCheck)
+        {
+            // Twice a second is enough (PlayerPrefs reads); the shop changes the wallet only while it is open.
+            canBuy = root == null && CanBuySomething();
+            nextCheck = Time.unscaledTime + 0.5f;
+        }
+        if (root != null) canBuy = false;
+        badge.SetActive(canBuy);
+        float pulse = canBuy ? 1f + 0.06f * Mathf.Sin(Time.time * 5f) : 1f;
+        shopButton.localScale = shopButtonScale * pulse;
+        if (canBuy) badge.transform.localRotation = Quaternion.Euler(0, 0, Mathf.Sin(Time.time * 6f) * 12f);
+    }
+
+    private static bool CanBuySomething()
+    {
+        foreach (var skin in FrogSkins.All)
+        {
+            if (!FrogSkins.IsOwned(skin.id) && FrogSkins.Flies >= skin.price) return true;
+        }
+        return false;
+    }
+
     public void Open()
     {
         if (root != null) return;

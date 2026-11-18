@@ -45,12 +45,16 @@ public class FrogLookScript : MonoBehaviour
         arrow.transform.localScale = new Vector3(scale, scale, 1);
         float halfLength = arrowHeight / 2f;
 
+        var play = GameObject.Find("Controll/RunPanel/Play");
+        var playButton = play != null ? play.GetComponent<UnityEngine.UI.Button>() : null;
+
         yield return new WaitForSeconds(0.3f);
         for (int i = 0; i < blinks; i++)
         {
+            if (playButton != null && !playButton.enabled) break; // the run started: the player found Larry
             renderer.enabled = true;
             float t = 0;
-            while (t < 0.5f)
+            while (t < 0.5f && (playButton == null || playButton.enabled))
             {
                 t += Time.deltaTime;
                 float bob = Mathf.Sin(t / 0.5f * Mathf.PI) * 0.15f;
