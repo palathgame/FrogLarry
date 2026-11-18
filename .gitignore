@@ -81,3 +81,6 @@ crashlytics-build.properties
 # Signing keys and local save backups
 *.keystore
 levelData.json.bak*
+
+# Local comparison screenshots
+/Screenshots/

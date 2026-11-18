@@ -73,6 +73,10 @@ public class GridManagerScript : MonoBehaviour
       //  Vector3 center = tilemap.localBounds.center;
        // tilemap.transform.TransformPoint(center);
 
+        // Dirt path with grass borders under walkable cells (see PathDecorator).
+        var pathDecorator = GetComponent<PathDecorator>();
+        if (pathDecorator != null) pathDecorator.Decorate(tilemap, wordsInLines);
+
         cam.GetComponent<CameraController>().CenterCam();
     }
 

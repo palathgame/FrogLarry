@@ -199,7 +199,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -3372,6 +3372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1700604596}
   - component: {fileID: 1700604597}
+  - component: {fileID: 1700604598}
   m_Layer: 0
   m_Name: GridManager
   m_TagString: Untagged
@@ -3410,6 +3411,47 @@ MonoBehaviour:
   tilePrefab: {fileID: 11400000, guid: 1bbb7c6feaafceb42b84d9c3f3a0fbba, type: 2}
   cam: {fileID: 519420031}
   Controll: {fileID: 251803369}
+--- !u!114 &1700604598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700604595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1379f4f6573a6fa45acf0e75450b34be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PathDecorator
+  pathTiles:
+  - {fileID: 11400000, guid: 6974e6faba6ad78439a8b1bc6788f16c, type: 2}
+  - {fileID: 11400000, guid: 7d465591b987e2545b0278fa279c2faa, type: 2}
+  - {fileID: 11400000, guid: c510fee76325d3f4b96290463609453a, type: 2}
+  - {fileID: 11400000, guid: dd61155dba8cc0d4aa4fef8f64305bbb, type: 2}
+  - {fileID: 11400000, guid: fdf0c688308f4f240ab653926aa967dc, type: 2}
+  - {fileID: 11400000, guid: a0c23a95f46bafe4eb40d903a3b0b45e, type: 2}
+  - {fileID: 11400000, guid: 2cb90b8e8b8f23d40b3dee1a1b823a07, type: 2}
+  - {fileID: 11400000, guid: e8d0bb4e06b16c14bb5f61ced2ca5b90, type: 2}
+  - {fileID: 11400000, guid: f753b0504613ae542b79be6a1258ffa2, type: 2}
+  - {fileID: 11400000, guid: 68c7fb18237e6b84e83d5cb941d6858b, type: 2}
+  - {fileID: 11400000, guid: a897d6f1eb8c731469eb8686db3eb52f, type: 2}
+  - {fileID: 11400000, guid: 24d0aab842ebe554eb1986891d540234, type: 2}
+  - {fileID: 11400000, guid: 5f25c6e91092ef64593392825c953bdb, type: 2}
+  - {fileID: 11400000, guid: da2871a38238ce544b18bd66f94114fb, type: 2}
+  - {fileID: 11400000, guid: 69f9b7c75e9b5704383a04d3cb370329, type: 2}
+  - {fileID: 11400000, guid: 9024d378a4edd59448870e8418429d58, type: 2}
+  edgeSprite: {fileID: 21300000, guid: 2bbec443e3c58414d993b259a714fdf2, type: 3}
+  cornerSprite: {fileID: 21300000, guid: 70318eae0df2b574fa8291a8aeede4ee, type: 3}
+  sortingOrder: 0
+  edgeInset: 0.06
+  leafSprites:
+  - {fileID: 21300000, guid: b477d40e7c3a4304c8c87e4af8829bec, type: 3}
+  - {fileID: 21300000, guid: 6eabfd47df2968d4fb1eaaa48634bb3d, type: 3}
+  - {fileID: 21300000, guid: 0b7b6759f52007a40aa3987d189c762d, type: 3}
+  - {fileID: 21300000, guid: f5bd2c2d9bc356a4782b814760cc81e1, type: 3}
+  - {fileID: 21300000, guid: dddd00e4243e0c344b81fd45b534338e, type: 3}
+  leavesPerCell: 0.9
+  leafScale: {x: 0.8, y: 1.2}
 --- !u!1 &1714144332
 GameObject:
   m_ObjectHideFlags: 0
