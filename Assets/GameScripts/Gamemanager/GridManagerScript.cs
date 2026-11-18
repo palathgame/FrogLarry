@@ -192,6 +192,12 @@ public class GridManagerScript : MonoBehaviour
            catchFly++;
     
     }
+    // Back to the start (LevelResetScript): the flies are back on the board.
+    public void ResetCatchFly()
+    {
+        catchFly = 0;
+    }
+
     public int getCatchFly() { 
         return catchFly;
     }

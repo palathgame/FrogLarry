@@ -267,6 +267,30 @@ MonoBehaviour:
     m_Key: shop_selected
     m_Metadata:
       m_Items: []
+  - m_Id: 417167388462649344
+    m_Key: restart_question
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649345
+    m_Key: restart_yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649346
+    m_Key: restart_no
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649347
+    m_Key: settings_restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649348
+    m_Key: on
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649349
+    m_Key: off
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

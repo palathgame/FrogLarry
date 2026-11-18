@@ -20,7 +20,16 @@ public class FrogLookScript : MonoBehaviour
 
     private void Start()
     {
-        if (arrowSprite != null) StartCoroutine(BlinkArrow());
+        ShowArrow();
+    }
+
+    // Also called when the level goes back to the start.
+    public void ShowArrow()
+    {
+        if (arrowSprite == null) return;
+        if (arrow != null) Destroy(arrow);
+        StopAllCoroutines();
+        StartCoroutine(BlinkArrow());
     }
 
     private IEnumerator BlinkArrow()

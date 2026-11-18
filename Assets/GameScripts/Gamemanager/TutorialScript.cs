@@ -26,9 +26,10 @@ public class TutorialScript : MonoBehaviour
         public bool arrowFromAbove;
     }
 
-    private enum State { Steps, Running, Retry, Finished }
+    private enum State { Steps, Running, Retry, Waiting, Finished }
 
     private List<Step> steps;
+    private int resetsAtRetry;
     private int stepIndex;
     private string hintKey;
     private State state = State.Steps;
@@ -162,20 +163,50 @@ public class TutorialScript : MonoBehaviour
                     // show this level's hint and point at the menu, where the level can be restarted.
                     state = State.Retry;
                     animTime = 0;
+                    var reset = FindAnyObjectByType<LevelResetScript>();
+                    resetsAtRetry = reset != null ? reset.Resets : 0;
                     SetText(hintKey);
                     SetVisible(true, false, true);
                 }
                 break;
 
             case State.Retry:
+                if (running)
+                {
+                    // Played again (from the start or from where Larry stands): hide the hint.
+                    state = State.Running;
+                    SetVisible(false, false, false);
+                    break;
+                }
                 if (GameObject.FindGameObjectWithTag("ResultScore") != null)
                 {
                     state = State.Finished;
                     break;
                 }
-                Animate(new Step { arrowAt = () => (RectTransform)GameObject.Find("Controll/Menu").transform });
+                var levelReset = FindAnyObjectByType<LevelResetScript>();
+                if (levelReset != null && levelReset.Resets != resetsAtRetry)
+                {
+                    // Larry is back on the start: hide the hint until the next run.
+                    state = State.Waiting;
+                    SetVisible(false, false, false);
+                    break;
+                }
+                Animate(new Step { arrowAt = RetryTarget });
+                break;
+
+            case State.Waiting:
+                if (running) state = State.Running;
+                else SetVisible(false, false, false);
                 break;
         }
+    }
+
+    // After a failed run: the "To start" button of the restart offer, or the menu when the offer is off/closed.
+    private RectTransform RetryTarget()
+    {
+        var levelReset = FindAnyObjectByType<LevelResetScript>();
+        if (levelReset != null && levelReset.StartButton != null) return levelReset.StartButton;
+        return (RectTransform)GameObject.Find("Controll/Menu").transform;
     }
 
     private void ShowStep(int index)

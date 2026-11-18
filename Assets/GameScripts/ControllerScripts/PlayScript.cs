@@ -91,6 +91,19 @@ public class PlayScript : MonoBehaviour
         }
 
         runPanel.GetComponent<RunPanelControll>().EnablePlay();
+        if (!win)
+        {
+            // The commands ran out and Larry is not in the pond: offer to go back to the start.
+            var levelReset = FindAnyObjectByType<LevelResetScript>();
+            if (levelReset != null) levelReset.OnRunEnded();
+        }
+    }
+
+    // Back to the start (LevelResetScript): the move count starts again from zero.
+    public void ResetMoves()
+    {
+        countMoves = 0;
+        win = false;
     }
 
 

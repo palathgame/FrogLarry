@@ -248,27 +248,28 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161730
-    m_Localized: Almost! Larry needs exactly 3 Moves. Open the menu and try again.
+    m_Localized: Almost! Larry needs exactly 3 Moves. Put Larry back at the start
+      and try again.
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161731
-    m_Localized: 'Larry must turn at the corner: 2 Moves, Right, 3 Moves. Open the
-      menu and try again.'
+    m_Localized: 'Larry must turn at the corner: 2 Moves, Right, 3 Moves. Put Larry
+      back at the start and try again.'
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161732
-    m_Localized: 'Jump right before the stone: Move, Jump, Move. Open the menu and
-      try again.'
+    m_Localized: 'Jump right before the stone: Move, Jump, Move. Put Larry back at
+      the start and try again.'
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161733
-    m_Localized: Go to the fly with 2 Moves, Eat, then 3 Moves. Open the menu and
-      try again.
+    m_Localized: Go to the fly with 2 Moves, Eat, then 3 Moves. Put Larry back at
+      the start and try again.
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161734
     m_Localized: A repeater with 3 Moves set to 4 walks 12 tiles, right to the pond.
-      Open the menu and try again.
+      Put Larry back at the start and try again.
     m_Metadata:
       m_Items: []
   - m_Id: 417159871087087616
@@ -281,6 +282,30 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 417159871124836353
     m_Localized: Selected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649344
+    m_Localized: Larry didn't reach the pond. Back to the start?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649345
+    m_Localized: To start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649346
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649347
+    m_Localized: Back to start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649348
+    m_Localized: On
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649349
+    m_Localized: Off
     m_Metadata:
       m_Items: []
   references:

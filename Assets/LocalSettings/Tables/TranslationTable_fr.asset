@@ -254,28 +254,28 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161730
-    m_Localized: "Presque ! Larry a besoin d'exactement 3 D\xE9placer. Ouvre le menu
-      et r\xE9essaie."
+    m_Localized: "Presque ! Larry a besoin d'exactement 3 D\xE9placer. Remets Larry
+      au d\xE9part et r\xE9essaie."
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161731
     m_Localized: "Larry doit tourner au virage : 2 D\xE9placer, \xC0 Droite, 3 D\xE9placer.
-      Ouvre le menu et r\xE9essaie."
+      Remets Larry au d\xE9part et r\xE9essaie."
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161732
     m_Localized: "Saute juste avant la pierre : D\xE9placer, Sauter, D\xE9placer.
-      Ouvre le menu et r\xE9essaie."
+      Remets Larry au d\xE9part et r\xE9essaie."
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161733
     m_Localized: "Va vers la mouche avec 2 D\xE9placer, Manger, puis 3 D\xE9placer.
-      Ouvre le menu et r\xE9essaie."
+      Remets Larry au d\xE9part et r\xE9essaie."
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161734
     m_Localized: "Un r\xE9p\xE9teur avec 3 D\xE9placer r\xE9gl\xE9 sur 4 fait 12
-      cases, jusqu'\xE0 la mare. Ouvre le menu et r\xE9essaie."
+      cases, jusqu'\xE0 la mare. Remets Larry au d\xE9part et r\xE9essaie."
     m_Metadata:
       m_Items: []
   - m_Id: 417159871087087616
@@ -288,6 +288,30 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 417159871124836353
     m_Localized: Choisie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649344
+    m_Localized: "Larry n'a pas atteint la mare. Retour au d\xE9part ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649345
+    m_Localized: "Au d\xE9part"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649346
+    m_Localized: Continuer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649347
+    m_Localized: "Retour au d\xE9part"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649348
+    m_Localized: "Activ\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649349
+    m_Localized: "D\xE9sactiv\xE9"
     m_Metadata:
       m_Items: []
   references:

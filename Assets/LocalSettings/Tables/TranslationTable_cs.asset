@@ -260,28 +260,28 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161730
-    m_Localized: "Skoro! Larry pot\u0159ebuje p\u0159esn\u011B 3\xD7 Pohyb. Otev\u0159i
-      menu a zkus to znovu."
+    m_Localized: "Skoro! Larry pot\u0159ebuje p\u0159esn\u011B 3\xD7 Pohyb. Vra\u0165
+      Larryho na start a zkus to znovu."
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161731
     m_Localized: "Larry se mus\xED oto\u010Dit a\u017E v zat\xE1\u010Dce: 2\xD7 Pohyb,
-      Doprava, 3\xD7 Pohyb. Otev\u0159i menu a zkus to znovu."
+      Doprava, 3\xD7 Pohyb. Vra\u0165 Larryho na start a zkus to znovu."
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161732
     m_Localized: "Sk\xE1kej t\u011Bsn\u011B p\u0159ed kamenem: Pohyb, Skok, Pohyb.
-      Otev\u0159i menu a zkus to znovu."
+      Vra\u0165 Larryho na start a zkus to znovu."
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161733
-    m_Localized: "Jdi k mou\u0161e 2\xD7 Pohyb, dej J\xEDst a pak 3\xD7 Pohyb. Otev\u0159i
-      menu a zkus to znovu."
+    m_Localized: "Jdi k mou\u0161e 2\xD7 Pohyb, dej J\xEDst a pak 3\xD7 Pohyb. Vra\u0165
+      Larryho na start a zkus to znovu."
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161734
     m_Localized: "Opakova\u010D se 3 Pohyby nastaven\xFD na 4\xD7 ujde 12 pol\xED\u010Dek,
-      p\u0159esn\u011B k rybn\xED\u010Dku. Otev\u0159i menu a zkus to znovu."
+      p\u0159esn\u011B k rybn\xED\u010Dku. Vra\u0165 Larryho na start a zkus to znovu."
     m_Metadata:
       m_Items: []
   - m_Id: 417159871087087616
@@ -294,6 +294,30 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 417159871124836353
     m_Localized: "Vybr\xE1no"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649344
+    m_Localized: "Larry nedo\u0161el do rybn\xED\u010Dku. Vr\xE1tit ho na start?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649345
+    m_Localized: Na start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649346
+    m_Localized: "Pokra\u010Dovat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649347
+    m_Localized: "N\xE1vrat na start"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649348
+    m_Localized: Zapnuto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649349
+    m_Localized: Vypnuto
     m_Metadata:
       m_Items: []
   references:

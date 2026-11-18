@@ -253,28 +253,28 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161730
-    m_Localized: "Fast! Larry braucht genau 3 Bewegungen. \xD6ffne das Men\xFC und
-      versuch es nochmal."
+    m_Localized: "Fast! Larry braucht genau 3 Bewegungen. Bring Larry zur\xFCck zum
+      Start und versuch es nochmal."
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161731
     m_Localized: "Larry muss in der Kurve drehen: 2 Bewegungen, Rechts, 3 Bewegungen.
-      \xD6ffne das Men\xFC und versuch es nochmal."
+      Bring Larry zur\xFCck zum Start und versuch es nochmal."
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161732
-    m_Localized: "Spring direkt vor dem Stein: Bewegung, Springen, Bewegung. \xD6ffne
-      das Men\xFC und versuch es nochmal."
+    m_Localized: "Spring direkt vor dem Stein: Bewegung, Springen, Bewegung. Bring
+      Larry zur\xFCck zum Start und versuch es nochmal."
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161733
-    m_Localized: "Geh mit 2 Bewegungen zur Fliege, Essen, dann 3 Bewegungen. \xD6ffne
-      das Men\xFC und versuch es nochmal."
+    m_Localized: "Geh mit 2 Bewegungen zur Fliege, Essen, dann 3 Bewegungen. Bring
+      Larry zur\xFCck zum Start und versuch es nochmal."
     m_Metadata:
       m_Items: []
   - m_Id: 417139962521161734
     m_Localized: "Ein Wiederholer mit 3 Bewegungen auf 4 gestellt geht 12 Felder,
-      genau bis zum Teich. \xD6ffne das Men\xFC und versuch es nochmal."
+      genau bis zum Teich. Bring Larry zur\xFCck zum Start und versuch es nochmal."
     m_Metadata:
       m_Items: []
   - m_Id: 417159871087087616
@@ -287,6 +287,30 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 417159871124836353
     m_Localized: "Gew\xE4hlt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649344
+    m_Localized: "Larry hat den Teich nicht erreicht. Zur\xFCck zum Start?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649345
+    m_Localized: Zum Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649346
+    m_Localized: Weiter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649347
+    m_Localized: "Zur\xFCck zum Start"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649348
+    m_Localized: An
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417167388462649349
+    m_Localized: Aus
     m_Metadata:
       m_Items: []
   references:

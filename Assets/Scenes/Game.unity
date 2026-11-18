@@ -3373,6 +3373,7 @@ GameObject:
   - component: {fileID: 1700604596}
   - component: {fileID: 1700604597}
   - component: {fileID: 1700604598}
+  - component: {fileID: 1700604599}
   m_Layer: 0
   m_Name: GridManager
   m_TagString: Untagged
@@ -3452,6 +3453,22 @@ MonoBehaviour:
   - {fileID: 21300000, guid: dddd00e4243e0c344b81fd45b534338e, type: 3}
   leavesPerCell: 0.9
   leafScale: {x: 0.8, y: 1.2}
+--- !u!114 &1700604599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700604595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd132571a85e5540b7a3355a8207dee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelResetScript
+  canvas: {fileID: 251803372}
+  panelSprite: {fileID: 21300000, guid: 0ec7917f8169e21449a4c738ee6bcce5, type: 3}
+  buttonSprite: {fileID: 21300000, guid: 2e0ce4ee4cd211c409ce7c59d0422dcb, type: 3}
+  font: {fileID: 11400000, guid: e208eb4d54093164ea9af184f1bcbaa7, type: 2}
 --- !u!1 &1714144332
 GameObject:
   m_ObjectHideFlags: 0
