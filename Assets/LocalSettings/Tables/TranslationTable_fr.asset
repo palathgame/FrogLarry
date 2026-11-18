@@ -314,6 +314,47 @@ MonoBehaviour:
     m_Localized: "D\xE9sactiv\xE9"
     m_Metadata:
       m_Items: []
+  - m_Id: 417175201305956352
+    m_Localized: "Le chemin est un carr\xE9 : 3 sauts et un virage, encore et encore.
+      Mets 1 Sauter dans la rang\xE9e rouge."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150656
+    m_Localized: "Appuie sur R\xE9p\xE9ter. Le saut devient un r\xE9p\xE9teur."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150657
+    m_Localized: "Avec + r\xE8gle-le sur 3. Larry saute trois fois."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150658
+    m_Localized: "Ajoute un bloc \xC0 Gauche apr\xE8s le r\xE9p\xE9teur, pour que
+      Larry tourne au coin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150659
+    m_Localized: "Maintenant mets tout dans un autre r\xE9p\xE9teur : appuie encore
+      sur R\xE9p\xE9ter. Un r\xE9p\xE9teur dans un r\xE9p\xE9teur !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150660
+    m_Localized: "Le carr\xE9 a 3 c\xF4t\xE9s. Avec + r\xE8gle le grand r\xE9p\xE9teur
+      sur 3."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150661
+    m_Localized: "Dedans : Sauter 3 fois et \xC0 Gauche. Dehors : le tout 3 fois.
+      Remets Larry au d\xE9part et r\xE9essaie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417179161320329216
+    m_Localized: Vibration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417179161320329217
+    m_Localized: Chapitre {0}
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

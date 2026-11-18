@@ -23,7 +23,7 @@ public class TutorialScript : MonoBehaviour
         public Func<RectTransform> ghostFrom;
         public Func<RectTransform> ghostTo;
         public Func<RectTransform> arrowAt;
-        public bool arrowFromAbove;
+        public bool arrowFromAbove; // used for Play and Repeat: from the side the arrow would cover a slot
     }
 
     private enum State { Steps, Running, Retry, Waiting, Finished }
@@ -110,11 +110,34 @@ public class TutorialScript : MonoBehaviour
                 {
                     new Step { key = "tut_l5_long", ghostFrom = () => LeftButton("Move"), ghostTo = () => FirstEmpty("SlotCreator2"),
                                done = () => Count("SlotCreator2", "Move") >= 3 || Repeater("SlotCreator2") != null },
-                    new Step { key = "tut_l5_make", arrowAt = () => RunButton("MakeRepeater"),
+                    new Step { key = "tut_l5_make", arrowAt = () => RunButton("MakeRepeater"), arrowFromAbove = true,
                                done = () => Repeater("SlotCreator2") != null || Repeater("SlotCreator") != null },
                     new Step { key = "tut_l5_count", arrowAt = () => Repeater("SlotCreator2"),
                                done = () => RepeaterCount() >= 4 || Repeater("SlotCreator") != null },
                     new Step { key = "tut_l5_drag", ghostFrom = () => Repeater("SlotCreator2"), ghostTo = () => FirstEmpty("SlotCreator"),
+                               done = () => Repeater("SlotCreator") != null },
+                    PlayStep(),
+                };
+            case "level16":
+                // Nested repeater: the path is a square, 3x [ (Jump 3x), Left ]. The trailing Left of
+                // the last round never runs, because Larry is already in the pond.
+                hintKey = "tut_hint_l16";
+                return new List<Step>
+                {
+                    new Step { key = "tut_l16_inner", ghostFrom = () => LeftButton("Jump"), ghostTo = () => FirstEmpty("SlotCreator2"),
+                               done = () => Count("SlotCreator2", "Jump") >= 1 || AnyRepeater() },
+                    new Step { key = "tut_l16_make", arrowAt = () => RunButton("MakeRepeater"), arrowFromAbove = true,
+                               done = () => AnyRepeater() },
+                    new Step { key = "tut_l16_count", arrowAt = () => Repeater("SlotCreator2"),
+                               done = () => RepeaterCount() >= 3 || Count("SlotCreator2", "Right") >= 1 || Nested() != null },
+                    // The "TurnLeft" button creates a block tagged "Right" (rotates counter-clockwise).
+                    new Step { key = "tut_l16_turn", ghostFrom = () => LeftButton("TurnLeft"), ghostTo = () => FirstEmpty("SlotCreator2"),
+                               done = () => Count("SlotCreator2", "Right") >= 1 || Nested() != null },
+                    new Step { key = "tut_l16_nest", arrowAt = () => RunButton("MakeRepeater"), arrowFromAbove = true,
+                               done = () => Nested() != null },
+                    new Step { key = "tut_l16_outer", arrowAt = () => Nested(),
+                               done = () => NestedCount() >= 3 || Repeater("SlotCreator") != null },
+                    new Step { key = "tut_l5_drag", ghostFrom = () => Nested(), ghostTo = () => FirstEmpty("SlotCreator"),
                                done = () => Repeater("SlotCreator") != null },
                     PlayStep(),
                 };
@@ -427,6 +450,34 @@ public class TutorialScript : MonoBehaviour
             if (slot.childCount > 0 && slot.GetChild(0).CompareTag("Repeater")) return (RectTransform)slot.GetChild(0);
         }
         return null;
+    }
+
+    private static bool AnyRepeater()
+    {
+        return Repeater("SlotCreator2") != null || Repeater("SlotCreator") != null;
+    }
+
+    // A repeater that holds another repeater (level 1 or more), in the editor row or the main row.
+    private static RectTransform Nested()
+    {
+        foreach (var tag in new[] { "SlotCreator2", "SlotCreator" })
+        {
+            var row = Row(tag);
+            if (row == null) continue;
+            for (int i = 0; i < row.childCount; i++)
+            {
+                var slot = row.GetChild(i);
+                if (slot.childCount == 0 || !slot.GetChild(0).CompareTag("Repeater")) continue;
+                if (slot.GetChild(0).GetComponent<RepeateScript>().GetLvl() >= 1) return (RectTransform)slot.GetChild(0);
+            }
+        }
+        return null;
+    }
+
+    private static int NestedCount()
+    {
+        var nested = Nested();
+        return nested != null ? nested.GetComponent<RepeateScript>().GetCountCycle() : 0;
     }
 
     private static int RepeaterCount()

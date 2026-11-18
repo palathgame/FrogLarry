@@ -320,6 +320,46 @@ MonoBehaviour:
     m_Localized: Vypnuto
     m_Metadata:
       m_Items: []
+  - m_Id: 417175201305956352
+    m_Localized: "Cesta je \u010Dtverec: 3 Skoky a oto\u010Dka, po\u0159\xE1d dokola.
+      Dej 1 Skok do \u010Derven\xE9 \u0159ady."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150656
+    m_Localized: "Stiskni Opakovat. Ze Skoku vznikne opakova\u010D."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150657
+    m_Localized: "Tla\u010D\xEDtkem + nastav 3\xD7. Larry sko\u010D\xED t\u0159ikr\xE1t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150658
+    m_Localized: "Za opakova\u010D p\u0159idej blok Doleva, aby se Larry v rohu oto\u010Dil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150659
+    m_Localized: "Te\u010F to cel\xE9 zabal do dal\u0161\xEDho opakova\u010De: stiskni
+      znovu Opakovat. Opakova\u010D v opakova\u010Di!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150660
+    m_Localized: "\u010Ctverec m\xE1 3 strany. Tla\u010D\xEDtkem + nastav velk\xFD
+      opakova\u010D na 3\xD7."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150661
+    m_Localized: "Uvnit\u0159: Skok 3\xD7 a Doleva. Venku: to cel\xE9 3\xD7. Vra\u0165
+      Larryho na start a zkus to znovu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417179161320329216
+    m_Localized: Vibrace
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417179161320329217
+    m_Localized: Kapitola {0}
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -1,4 +1,4 @@
-# Generates the bump sound (synthesised, no third-party audio) and the dizzy star sprite.
+# Generates the bump sound, the result star chime (synthesised, no third-party audio) and the dizzy star sprite.
 import math, random, struct, wave
 from PIL import Image, ImageDraw
 random.seed(3)
@@ -26,3 +26,17 @@ for k in range(10):
 im = Image.new('RGBA', (W, W), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
 d.polygon(pts, fill=(255, 214, 51, 255), outline=(92, 54, 20, 255), width=4 * S)
 im.resize((64, 64), Image.LANCZOS).save('Assets/Graphic/Effects/DizzyStar.png')
+# --- Resources/Sounds/StarDing.wav: short bright chime for each star on the result screen
+# (ResultStarsEffect plays it with a rising pitch per star). Bell-like partials, fast attack, soft decay.
+N = int(RATE * 0.55)
+samples = []
+for i in range(N):
+    t = i / RATE
+    env = (1 - math.exp(-t * 900)) * math.exp(-t * 7)
+    tone = (math.sin(2 * math.pi * 1046.5 * t) + 0.5 * math.sin(2 * math.pi * 2093 * t) * math.exp(-t * 6)
+            + 0.25 * math.sin(2 * math.pi * 3136 * t) * math.exp(-t * 12))
+    samples.append(tone * env)
+peak = max(abs(s) for s in samples)
+with wave.open('Assets/Resources/Sounds/StarDing.wav', 'wb') as w:
+    w.setnchannels(1); w.setsampwidth(2); w.setframerate(RATE)
+    w.writeframes(b''.join(struct.pack('<h', int(s / peak * 0.7 * 32767)) for s in samples))

@@ -308,6 +308,45 @@ MonoBehaviour:
     m_Localized: Off
     m_Metadata:
       m_Items: []
+  - m_Id: 417175201305956352
+    m_Localized: 'The path is a square: 3 Jumps and a turn, over and over. Put 1
+      Jump into the red row.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150656
+    m_Localized: Press Repeat. The Jump turns into a repeater.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150657
+    m_Localized: Use + to set it to 3. Larry jumps three times.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150658
+    m_Localized: Add a Left block after the repeater, so Larry turns at the corner.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150659
+    m_Localized: 'Now wrap it all in another repeater: press Repeat again. A repeater
+      inside a repeater!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150660
+    m_Localized: The square has 3 sides. Use + to set the big repeater to 3.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150661
+    m_Localized: 'Inside: Jump 3 times and Left. Outside: all of it 3 times. Put
+      Larry back at the start and try again.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417179161320329216
+    m_Localized: Vibration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417179161320329217
+    m_Localized: Chapter {0}
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -313,6 +313,47 @@ MonoBehaviour:
     m_Localized: Aus
     m_Metadata:
       m_Items: []
+  - m_Id: 417175201305956352
+    m_Localized: "Der Weg ist ein Quadrat: 3 Spr\xFCnge und eine Drehung, immer wieder.
+      Leg 1 Springen in die rote Reihe."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150656
+    m_Localized: "Dr\xFCck Wiederholen. Aus dem Sprung wird ein Wiederholer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150657
+    m_Localized: Stell ihn mit + auf 3. Larry springt dreimal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150658
+    m_Localized: Leg einen Block Links hinter den Wiederholer, damit Larry an der
+      Ecke dreht.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150659
+    m_Localized: "Pack jetzt alles in einen weiteren Wiederholer: dr\xFCck nochmal
+      Wiederholen. Ein Wiederholer im Wiederholer!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150660
+    m_Localized: "Das Quadrat hat 3 Seiten. Stell den gro\xDFen Wiederholer mit +
+      auf 3."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417175201310150661
+    m_Localized: "Innen: Springen 3-mal und Links. Au\xDFen: alles 3-mal. Bring Larry
+      zur\xFCck zum Start und versuch es nochmal."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417179161320329216
+    m_Localized: Vibration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417179161320329217
+    m_Localized: Kapitel {0}
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

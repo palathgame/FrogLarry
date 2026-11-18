@@ -6,7 +6,7 @@ using UnityEngine;
 //  - FlyEaten: "+1" with a fly icon floats up above Larry.
 //  - Bump: Larry bumps into a bush or stone he cannot pass: he nudges forward and back,
 //    the obstacle shakes, a soft thump plays (Sounds/Bump.wav, made by Tools/generate_effects.py)
-//    and dizzy stars circle above his head.
+//    dizzy stars circle above his head and the phone gives a short buzz (Haptics, can be turned off).
 public class FrogEffectsScript : MonoBehaviour
 {
     [SerializeField] private Sprite flyIcon;      // Resources/FrogSkins/Icons/FlyIcon
@@ -29,6 +29,7 @@ public class FrogEffectsScript : MonoBehaviour
             AudioSource.PlayClipAtPoint(bumpClip, Camera.main != null ? Camera.main.transform.position : transform.position,
                 PlayerPrefs.GetFloat("GameSounds", 1.0f));
         }
+        Haptics.Bump();
         if (obstacle != null) StartCoroutine(Shake(obstacle.transform, 0.35f, 0.06f));
         StartCoroutine(DizzyStars());
 

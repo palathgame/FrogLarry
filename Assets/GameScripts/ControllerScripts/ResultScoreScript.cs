@@ -56,7 +56,12 @@ public class ResultScoreScript : MonoBehaviour
         saveScore(level, countStar);
         // Flies eaten in this (won) run go to the shop wallet; a failed run gives nothing.
         FrogSkins.AddFlies(gridManagerScript.getCatchFly());
-        ShowFliesEarned(image, gridManagerScript.getCatchFly());
+        var fliesRow = ShowFliesEarned(image, gridManagerScript.getCatchFly());
+
+        // The stars pop in one by one with a chime, then the "+N flies" row.
+        var stars = new Transform[3];
+        for (int i = 0; i < 3; i++) stars[i] = image.transform.Find("Star" + i);
+        gameObject.AddComponent<ResultStarsEffect>().Play(stars, countStar, fliesRow);
 
         int number;
         if (int.TryParse(level.Substring(5), out number))
@@ -75,7 +80,7 @@ public class ResultScoreScript : MonoBehaviour
 
 
     // "+N" with a fly icon under the stars: how many flies this run added to the shop wallet.
-    private void ShowFliesEarned(Transform panel, int flies)
+    private Transform ShowFliesEarned(Transform panel, int flies)
     {
         var row = new GameObject("FliesEarned", typeof(RectTransform));
         var rect = (RectTransform)row.transform;
@@ -103,6 +108,7 @@ public class ResultScoreScript : MonoBehaviour
         text.rectTransform.anchoredPosition = new Vector2(-75, 0);
         text.rectTransform.sizeDelta = new Vector2(160, 90);
         text.raycastTarget = false;
+        return rect;
     }
 
     public void startNextLevel() {        

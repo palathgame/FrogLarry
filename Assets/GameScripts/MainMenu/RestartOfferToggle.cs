@@ -1,49 +1,45 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-// On the Settings prefab: an on/off row for the "back to the start?" offer after a run
-// that did not reach the pond (see LevelResetScript.OfferEnabled). Saved immediately.
+// On the Settings prefab: on/off rows, saved immediately.
+//  - the "back to the start?" offer after a run that did not reach the pond (LevelResetScript.OfferEnabled)
+//  - vibration when Larry bumps into something (Haptics.Enabled)
 public class RestartOfferToggle : MonoBehaviour
 {
     [SerializeField] private RectTransform parent;  // the settings Canvas holding the other rows
     [SerializeField] private Sprite buttonSprite;   // Graphic/ButtonGrafic/Menu
     [SerializeField] private TMP_FontAsset font;
-    [SerializeField] private float y = -900f;       // same anchoring as the other rows (top centre)
-
-    private TextMeshProUGUI state;
+    [SerializeField] private float y = -900f;       // first row; same anchoring as the other rows (top centre)
+    [SerializeField] private float rowGap = 180f;
 
     private void Start()
     {
-        var label = MakeText(parent, LevelResetScript.Localized("settings_restart", "Back to start"), 82);
+        AddRow(y, "settings_restart", "Back to start", () => LevelResetScript.OfferEnabled, v => LevelResetScript.OfferEnabled = v);
+        AddRow(y - rowGap, "settings_vibration", "Vibration", () => Haptics.Enabled, v => Haptics.Enabled = v);
+    }
+
+    private void AddRow(float rowY, string labelKey, string labelFallback, Func<bool> get, Action<bool> set)
+    {
+        var label = MakeText(parent, LevelResetScript.Localized(labelKey, labelFallback), 82);
         label.alignment = TextAlignmentOptions.Left;
         label.textWrappingMode = TextWrappingModes.NoWrap;
-        Place(label.rectTransform, new Vector2(-250, y), new Vector2(900, 130)); // left edge in line with the slider labels
+        Place(label.rectTransform, new Vector2(-250, rowY), new Vector2(900, 130)); // left edge in line with the slider labels
 
-        var go = new GameObject("RestartOffer", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(Button));
+        var go = new GameObject("Toggle_" + labelKey, typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(Button));
         var rect = (RectTransform)go.transform;
         rect.SetParent(parent, false);
-        Place(rect, new Vector2(150, y), new Vector2(420, 150)); // right edge in line with the sliders
+        Place(rect, new Vector2(150, rowY), new Vector2(420, 150)); // right edge in line with the sliders
         go.GetComponent<Image>().sprite = buttonSprite;
-        go.GetComponent<Button>().onClick.AddListener(Toggle);
-        state = MakeText(rect, "", 80);
+        var state = MakeText(rect, "", 80);
         state.rectTransform.anchorMin = Vector2.zero;
         state.rectTransform.anchorMax = Vector2.one;
         state.rectTransform.offsetMin = state.rectTransform.offsetMax = Vector2.zero;
-        Refresh();
-    }
 
-    private void Toggle()
-    {
-        LevelResetScript.OfferEnabled = !LevelResetScript.OfferEnabled;
+        void Refresh() => state.text = get() ? LevelResetScript.Localized("on", "On") : LevelResetScript.Localized("off", "Off");
+        go.GetComponent<Button>().onClick.AddListener(() => { set(!get()); Refresh(); });
         Refresh();
-    }
-
-    private void Refresh()
-    {
-        state.text = LevelResetScript.OfferEnabled
-            ? LevelResetScript.Localized("on", "On")
-            : LevelResetScript.Localized("off", "Off");
     }
 
     private TextMeshProUGUI MakeText(Transform parentTransform, string value, float size)
