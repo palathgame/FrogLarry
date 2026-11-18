@@ -277,6 +277,18 @@ MonoBehaviour:
       genau bis zum Teich. \xD6ffne das Men\xFC und versuch es nochmal."
     m_Metadata:
       m_Items: []
+  - m_Id: 417159871087087616
+    m_Localized: "Fr\xF6sche"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417159871124836352
+    m_Localized: "W\xE4hlen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417159871124836353
+    m_Localized: "Gew\xE4hlt"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

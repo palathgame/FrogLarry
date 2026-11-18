@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -53,6 +54,9 @@ public class ResultScoreScript : MonoBehaviour
         
         var level = gridManagerScript.getLevel();
         saveScore(level, countStar);
+        // Flies eaten in this (won) run go to the shop wallet; a failed run gives nothing.
+        FrogSkins.AddFlies(gridManagerScript.getCatchFly());
+        ShowFliesEarned(image, gridManagerScript.getCatchFly());
 
         int number;
         if (int.TryParse(level.Substring(5), out number))
@@ -69,6 +73,37 @@ public class ResultScoreScript : MonoBehaviour
         }
     }
 
+
+    // "+N" with a fly icon under the stars: how many flies this run added to the shop wallet.
+    private void ShowFliesEarned(Transform panel, int flies)
+    {
+        var row = new GameObject("FliesEarned", typeof(RectTransform));
+        var rect = (RectTransform)row.transform;
+        rect.SetParent(panel, false);
+        rect.anchorMin = rect.anchorMax = new Vector2(0, 1);
+        rect.anchoredPosition = new Vector2(480, -330); // centred under the stars (their pivot is top-left)
+        rect.sizeDelta = new Vector2(300, 90);
+
+        var icon = new GameObject("Fly", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image)).GetComponent<Image>();
+        icon.transform.SetParent(rect, false);
+        icon.sprite = FrogSkins.LoadIcon("FlyIcon");
+        icon.preserveAspect = true;
+        icon.rectTransform.anchoredPosition = new Vector2(55, 0);
+        icon.rectTransform.sizeDelta = new Vector2(85, 85);
+
+        var text = new GameObject("Count", typeof(RectTransform), typeof(CanvasRenderer)).AddComponent<TextMeshProUGUI>();
+        text.transform.SetParent(rect, false);
+        var anyText = FindAnyObjectByType<TextMeshProUGUI>();
+        if (anyText != null) text.font = anyText.font;
+        text.text = "+" + flies;
+        text.fontSize = 72;
+        text.fontStyle = FontStyles.Bold;
+        text.color = new Color(0.27f, 0.17f, 0.08f);
+        text.alignment = TextAlignmentOptions.Right;
+        text.rectTransform.anchoredPosition = new Vector2(-75, 0);
+        text.rectTransform.sizeDelta = new Vector2(160, 90);
+        text.raycastTarget = false;
+    }
 
     public void startNextLevel() {        
        SceneManager.LoadScene("Game");

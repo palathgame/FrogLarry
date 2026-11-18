@@ -284,6 +284,18 @@ MonoBehaviour:
       p\u0159esn\u011B k rybn\xED\u010Dku. Otev\u0159i menu a zkus to znovu."
     m_Metadata:
       m_Items: []
+  - m_Id: 417159871087087616
+    m_Localized: "\u017Dab\xE1ci"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417159871124836352
+    m_Localized: Vybrat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417159871124836353
+    m_Localized: "Vybr\xE1no"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

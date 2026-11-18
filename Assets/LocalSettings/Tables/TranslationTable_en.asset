@@ -271,6 +271,18 @@ MonoBehaviour:
       Open the menu and try again.
     m_Metadata:
       m_Items: []
+  - m_Id: 417159871087087616
+    m_Localized: Frogs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417159871124836352
+    m_Localized: Choose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417159871124836353
+    m_Localized: Selected
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -255,6 +255,18 @@ MonoBehaviour:
     m_Key: tut_hint_l5
     m_Metadata:
       m_Items: []
+  - m_Id: 417159871087087616
+    m_Key: shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417159871124836352
+    m_Key: shop_select
+    m_Metadata:
+      m_Items: []
+  - m_Id: 417159871124836353
+    m_Key: shop_selected
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
